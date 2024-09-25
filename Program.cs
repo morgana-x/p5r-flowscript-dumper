@@ -18,7 +18,7 @@ public partial class Program
                 continue;
             }
             numC++;
-            if (numC >= 1)
+            if (numC >= 2)
                 break;
             }
         return Encoding.Default.GetString(toCompile.ToArray());
