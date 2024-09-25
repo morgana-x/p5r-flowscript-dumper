@@ -41,7 +41,7 @@ public partial class Program
             if (!funcName.ToLower().Contains(searchTerm))
                 continue;
             functionDump.Add(funcName, funcPointer);
-            Console.WriteLine($"{funcName} : 0x{stringPointer.ToString("X")}");
+            Console.WriteLine($"{funcName} : 0x{funcPointer.ToString("X")}");
         }
         string exePath = System.Reflection.Assembly.GetEntryAssembly().Location;
         string exeFolder = Directory.GetParent(exePath).FullName;
